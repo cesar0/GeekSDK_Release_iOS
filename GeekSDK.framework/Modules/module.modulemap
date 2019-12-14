@@ -1,0 +1,11 @@
+framework module GeekSDK {
+  umbrella header "GeekSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module GeekSDK.Swift {
+    header "GeekSDK-Swift.h"
+    requires objc
+}
