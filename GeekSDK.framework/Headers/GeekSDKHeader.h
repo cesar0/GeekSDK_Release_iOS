@@ -9,11 +9,28 @@
 #ifndef GeekSDKHeader_h
 #define GeekSDKHeader_h
 
+public class GeekSDK_DeviceInfoModel: NSObject {
+    public var deviceInfoName: String?      //设备名称
+    public var deviceInfoVersion : String?  //设备版本号
+    public var deviceInfoMode : String?     //设备mode（设备的唯一标识）
+    public var deviceInfoType: Int?         //设备类型 0:键鼠类型 1：单边手柄 2: 双边手柄 3: 两点手柄 7： 游戏手机壳 16: 主机设备
+    public var deviceInfoModel : Int?       //设备模式 0:安卓模式 1:直玩模式 2: 有线模式（直玩模式跟有线模式都属于iOS模式）
+    public var deviceConfigMaxLength: String?   //设备最大允许添加的配置按键的长度
+}
+
+//蓝牙连接状态
+public class func bluetoothConnectState() -> Bool
+
+//蓝牙开关状态
+public class func bluetoothState() -> Bool
+
 //未连接设备的时候，调用此方法开始扫描已经连接的设备
-    public class func connectDevice()
+//扫描到符合要求的设备的时候，走第一个闭包
+//当获取到必要的设备信息的时候，走第二个闭包
+public class func connectDevice(startConnect: @escaping () -> Void, connectComplated: @escaping (_ geekSDK_DeviceInfoModel: GeekSDK_DeviceInfoModel) -> Void)
     
     //获取已连接设备的基本信息
-    public class func getDeviceInfo() -> GeekSDK_DeviceInfoModel
+public class func getDeviceInfo() -> GeekSDK_DeviceInfoModel
     
     //获取已连接设备的所支持的模式
     public class func getDeviceSupportModel() -> NSArray
@@ -31,7 +48,7 @@
     public class func writeToDeviceClose() -> Void
     
     //旋转屏幕
-    //param: 0: 默认方向 1: 旋转180度方向
+    //param: 0: home键在下面 1: home键在右边 2:home键在上面 3:home键在左边
     public class func setScreenMode(direction: Int) -> Void
     
     //接收单个按键数据
@@ -67,7 +84,10 @@
     public class func turnKeyListToData() -> Data
     
     //写入配置到设备
-    public class func writeDataToDevice() -> Void 
+    public class func writeDataToDevice(keyInfoList: NSArray) -> Void
+
+//写入配置到主机设备
+public class func applyData(data : NSMutableData ,length : UInt8) -> Void
     
     //按键属性修改
     
