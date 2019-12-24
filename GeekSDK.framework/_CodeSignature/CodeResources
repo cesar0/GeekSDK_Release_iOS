@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/GeekSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		vIjNFlMGzRVbPtZHegLolpr+yKU=
+		wg6/6rDqiecKHy0FVSnDEKet1V0=
 		</data>
 		<key>Modules/GeekSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		mxGNIPs1aqqVOcyN1qBtrXG95XA=
+		xUt393kPTprDYiemApIfi1YDU0g=
 		</data>
 		<key>Modules/GeekSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		vIjNFlMGzRVbPtZHegLolpr+yKU=
+		wg6/6rDqiecKHy0FVSnDEKet1V0=
 		</data>
 		<key>Modules/GeekSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		mxGNIPs1aqqVOcyN1qBtrXG95XA=
+		xUt393kPTprDYiemApIfi1YDU0g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,44 +80,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vIjNFlMGzRVbPtZHegLolpr+yKU=
+			wg6/6rDqiecKHy0FVSnDEKet1V0=
 			</data>
 			<key>hash2</key>
 			<data>
-			k+kjSsM6DNaQOdwQVbmb/ubBy0/hZRiNL7G+TePN0Lk=
+			RNJy/grGdnooT4ha8epmqBnpSeZW7xAssJgT+9w2jlE=
 			</data>
 		</dict>
 		<key>Modules/GeekSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mxGNIPs1aqqVOcyN1qBtrXG95XA=
+			xUt393kPTprDYiemApIfi1YDU0g=
 			</data>
 			<key>hash2</key>
 			<data>
-			caEsqzteM/pazhE4c3wpIgmzyQchxUaOvB7Ypxoj6pQ=
+			1G9xA7/UIrGf9paGLARUheqTyuJVrgD15u6fUwWNyak=
 			</data>
 		</dict>
 		<key>Modules/GeekSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vIjNFlMGzRVbPtZHegLolpr+yKU=
+			wg6/6rDqiecKHy0FVSnDEKet1V0=
 			</data>
 			<key>hash2</key>
 			<data>
-			k+kjSsM6DNaQOdwQVbmb/ubBy0/hZRiNL7G+TePN0Lk=
+			RNJy/grGdnooT4ha8epmqBnpSeZW7xAssJgT+9w2jlE=
 			</data>
 		</dict>
 		<key>Modules/GeekSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mxGNIPs1aqqVOcyN1qBtrXG95XA=
+			xUt393kPTprDYiemApIfi1YDU0g=
 			</data>
 			<key>hash2</key>
 			<data>
-			caEsqzteM/pazhE4c3wpIgmzyQchxUaOvB7Ypxoj6pQ=
+			1G9xA7/UIrGf9paGLARUheqTyuJVrgD15u6fUwWNyak=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
