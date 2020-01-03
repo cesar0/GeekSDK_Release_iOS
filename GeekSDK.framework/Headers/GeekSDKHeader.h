@@ -10,11 +10,11 @@
 #define GeekSDKHeader_h
 
 public class GeekSDK_DeviceInfoModel: NSObject {
-    public var deviceInfoName: String?      //设备名称
-    public var deviceInfoVersion : String?  //设备版本号
-    public var deviceInfoMode : String?     //设备mode（设备的唯一标识）
-    public var deviceInfoType: Int?         //设备类型 0:键鼠类型 1：单边手柄 2: 双边手柄 3: 两点手柄 7： 游戏手机壳 16: 主机设备
-    public var deviceInfoModel : Int?       //设备模式 0:安卓模式 1:直玩模式 2: 有线模式（直玩模式跟有线模式都属于iOS模式）
+    public var deviceInfoName: String?          //设备名称
+    public var deviceInfoVersion : String?      //设备版本号
+    public var deviceInfoMode : String?         //设备mode（设备的唯一标识）
+    public var deviceInfoType: Int?             //设备类型 0:键鼠类型 1：单边手柄 2: 双边手柄 3: 两点手柄 7： 游戏手机壳 16: 主机设备
+    public var deviceInfoModel : Int?           //设备模式 0:安卓模式 1:直玩模式 2: 有线模式（直玩模式跟有线模式都属于iOS模式）
     public var deviceConfigMaxLength: String?   //设备最大允许添加的配置按键的长度
 }
 
@@ -32,24 +32,24 @@ public class func connectDevice(startConnect: @escaping () -> Void, connectCompl
     //获取已连接设备的基本信息
 public class func getDeviceInfo() -> GeekSDK_DeviceInfoModel
     
-    //获取已连接设备的所支持的模式
-    public class func getDeviceSupportModel() -> NSArray
-    
-    //切换设备模式：直玩，有线， 主机模式
-    public class func changeDeviceModel(device_Model: String) -> Void
-    
-    //修改蓝牙名称
-    public class func changeDeviceName(deviceName: String) -> Void
-    
-    //打开数据接收
-    public class func writeToDeviceOpen() -> Void
-    
-    //关闭数据接收
-    public class func writeToDeviceClose() -> Void
+//获取已连接设备的所支持的模式
+public class func getDeviceSupportModel() -> NSArray
+
+//切换设备模式：直玩，有线， 主机模式
+public class func changeDeviceModel(device_Model: String) -> Void
+
+//修改蓝牙名称
+public class func changeDeviceName(deviceName: String, changeNameSuccessBlock: @escaping () -> Void, changeNameFailBlock: @escaping () -> Void) -> Void
+
+//打开数据接收
+public class func writeToDeviceOpen(openSuccessBlock: @escaping () -> Void) -> Void
+
+//关闭数据接收
+public class func writeToDeviceClose(closeSuccessBlock: @escaping () -> Void) -> Void
     
     //旋转屏幕
     //param: 0: home键在下面 1: home键在右边 2:home键在上面 3:home键在左边
-    public class func setScreenMode(direction: Int) -> Void
+public class func setScreenMode(direction: Int, setScreenSuccessBlock: @escaping () -> Void) -> Void
     
     //接收单个按键数据
     
@@ -81,18 +81,36 @@ public class func getDeviceInfo() -> GeekSDK_DeviceInfoModel
 //    }
     
     //打包配置数据
-    public class func turnKeyListToData() -> Data
+public class func turnKeyListToData() -> Data
     
     //写入配置到设备
-    public class func writeDataToDevice(keyInfoList: NSArray) -> Void
+public class func writeDataToDevice(keyInfoList: NSArray, writeToDeviceSuccessBlock: @escaping () -> Void) -> Void
 
 //写入配置到主机设备
-public class func applyData(data : NSMutableData ,length : UInt8) -> Void
+public class func applyData(data : NSMutableData ,length : UInt8, writeToDeviceSuccessBlock: @escaping () -> Void) -> Void
     
     //按键属性修改
     
     //蓝牙ota升级
     //mcu升级
+
+public class func getUpdateOTAVersionWithDeviceInfoMode(deviceInfoMode: String) -> String
+
+//获取ota升级方式
+//updateType:0:老的升级方式 1:新的升级方式
+public class func getDeviceOTAUpdateType(updateOTAType: @escaping (_ updateType: Int) -> Void) -> Void
+
+////新设备mcu+ota升级方法
+//public class func updateDeviceOTAWithDeviceInfoMode(deviceInfoMode: String, progress: @escaping (_ processFloat: Float) -> Void, updateFailed: @escaping () -> Void, updateOTAComplated: @escaping () -> Void) -> Void
+
+//新设备mcu升级方法
+public class func new_updateDeviceMCUWithDeviceInfoMode(deviceInfoMode: String, progress: @escaping (_ processFloat: Float) -> Void, updateFailed: @escaping () -> Void, updateOTAComplated: @escaping () -> Void) -> Void
+
+//蓝牙ota升级方法
+public class func updateDeviceOTAWithDeviceInfoMode(deviceInfoMode: String, progress: @escaping (_ processFloat: Float) -> Void, updateFailed: @escaping () -> Void, updateOTAComplated: @escaping () -> Void) -> Void
+    
+//老设备mcu升级方法
+public class func old_updateDeviceMCUWithDeviceInfoMode(deviceInfoMode: String, progress: @escaping (_ processFloat: Float) -> Void, updateFailed: @escaping () -> Void, updateOTAComplated: @escaping () -> Void) -> Void
 
 
 #endif /* GeekSDKHeader_h */

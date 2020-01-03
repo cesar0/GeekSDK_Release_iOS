@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/AliyunOSSiOS.framework/AliyunOSSiOS</key>
+		<data>
+		b7uDhQNdFVrzWIYyL+85IsaYzyc=
+		</data>
+		<key>Frameworks/AliyunOSSiOS.framework/Info.plist</key>
+		<data>
+		HF5TagnCvxc6Qvmo7GVd8idwkw8=
+		</data>
+		<key>Frameworks/AliyunOSSiOS.framework/_CodeSignature/CodeResources</key>
+		<data>
+		WeEQ4MD4/b4hk4V7CfulrACak9Y=
+		</data>
 		<key>Headers/GeekSDK-Swift.h</key>
 		<data>
 		Y09AFL6sv37tq/3C4p6k4/dFasM=
@@ -14,7 +26,7 @@
 		</data>
 		<key>Headers/GeekSDKHeader.h</key>
 		<data>
-		eC2b2SJQOeRgceOEU8V+9lSg6+g=
+		4nO9CnWlUEGZ4s8FC46F1Vjoy+c=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -26,7 +38,7 @@
 		</data>
 		<key>Modules/GeekSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		xUt393kPTprDYiemApIfi1YDU0g=
+		iRKPLZwW1aAIUYrxL1NfPWsxDAk=
 		</data>
 		<key>Modules/GeekSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -34,7 +46,7 @@
 		</data>
 		<key>Modules/GeekSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		xUt393kPTprDYiemApIfi1YDU0g=
+		iRKPLZwW1aAIUYrxL1NfPWsxDAk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,6 +55,39 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/AliyunOSSiOS.framework/AliyunOSSiOS</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b7uDhQNdFVrzWIYyL+85IsaYzyc=
+			</data>
+			<key>hash2</key>
+			<data>
+			iCZM1g/HdeYA9j9/zCPCcpJPDVYKuICpEF7gzj85MD8=
+			</data>
+		</dict>
+		<key>Frameworks/AliyunOSSiOS.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HF5TagnCvxc6Qvmo7GVd8idwkw8=
+			</data>
+			<key>hash2</key>
+			<data>
+			+qKQANU9TkbpGPzP9PuAihtgDiguvkkGI4sCKRxLe0E=
+			</data>
+		</dict>
+		<key>Frameworks/AliyunOSSiOS.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WeEQ4MD4/b4hk4V7CfulrACak9Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			9EuBUduzwKW+yf4vxRnhspBPUnl2BJNmt17BLqGc6LA=
+			</data>
+		</dict>
 		<key>Headers/GeekSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
@@ -69,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eC2b2SJQOeRgceOEU8V+9lSg6+g=
+			4nO9CnWlUEGZ4s8FC46F1Vjoy+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			uOZcDs20gBNzOo4D5935GP8XfO830m8JcssRo8Uw+iY=
+			n/XjVu8x7dDRTaPWOQ/DwpoebWihsEdDwNgT6EodzKU=
 			</data>
 		</dict>
 		<key>Modules/GeekSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -91,11 +136,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xUt393kPTprDYiemApIfi1YDU0g=
+			iRKPLZwW1aAIUYrxL1NfPWsxDAk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1G9xA7/UIrGf9paGLARUheqTyuJVrgD15u6fUwWNyak=
+			oqIHDYkzH7Xpb60FHu3M75W0Er41uPZuMn+kuTTSlQ4=
 			</data>
 		</dict>
 		<key>Modules/GeekSDK.swiftmodule/arm64.swiftdoc</key>
@@ -113,11 +158,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xUt393kPTprDYiemApIfi1YDU0g=
+			iRKPLZwW1aAIUYrxL1NfPWsxDAk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1G9xA7/UIrGf9paGLARUheqTyuJVrgD15u6fUwWNyak=
+			oqIHDYkzH7Xpb60FHu3M75W0Er41uPZuMn+kuTTSlQ4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
