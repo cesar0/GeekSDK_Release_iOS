@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>获取蓝牙信息用于为用户连接蓝牙设备</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>获取蓝牙信息用于为用户连接蓝牙设备</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

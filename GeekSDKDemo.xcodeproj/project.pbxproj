@@ -15,9 +15,9 @@
 		A10ECB7F2376530F00F68D66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10ECB7D2376530F00F68D66 /* LaunchScreen.storyboard */; };
 		A10ECB8A2376531000F68D66 /* GeekSDKDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10ECB892376531000F68D66 /* GeekSDKDemoTests.swift */; };
 		A10ECB952376531000F68D66 /* GeekSDKDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10ECB942376531000F68D66 /* GeekSDKDemoUITests.swift */; };
+		A10F5E0D23C45C5E00604970 /* GeekSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10F5E0C23C45C5D00604970 /* GeekSDK.framework */; };
 		A13153AE23B3549900024873 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13153AD23B3549900024873 /* AliyunOSSiOS.framework */; };
 		A13153AF23B354A300024873 /* AliyunOSSiOS.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A13153AD23B3549900024873 /* AliyunOSSiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A133555223BF1514006FB9AB /* GeekSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A133555123BF1514006FB9AB /* GeekSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 		A10ECB902376531000F68D66 /* GeekSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeekSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10ECB942376531000F68D66 /* GeekSDKDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekSDKDemoUITests.swift; sourceTree = "<group>"; };
 		A10ECB962376531000F68D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10F5E0C23C45C5D00604970 /* GeekSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeekSDK.framework; sourceTree = "<group>"; };
 		A13153AD23B3549900024873 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
-		A133555123BF1514006FB9AB /* GeekSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GeekSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A13153AE23B3549900024873 /* AliyunOSSiOS.framework in Frameworks */,
-				A133555223BF1514006FB9AB /* GeekSDK.framework in Frameworks */,
+				A10F5E0D23C45C5E00604970 /* GeekSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 		A10ECB662376530E00F68D66 = {
 			isa = PBXGroup;
 			children = (
-				A133555123BF1514006FB9AB /* GeekSDK.framework */,
+				A10F5E0C23C45C5D00604970 /* GeekSDK.framework */,
 				A13153AD23B3549900024873 /* AliyunOSSiOS.framework */,
 				A10ECB712376530E00F68D66 /* GeekSDKDemo */,
 				A10ECB882376531000F68D66 /* GeekSDKDemoTests */,
@@ -161,6 +161,7 @@
 				A10ECB6C2376530E00F68D66 /* Frameworks */,
 				A10ECB6D2376530E00F68D66 /* Resources */,
 				A10FE33223B207B8009093A3 /* CopyFiles */,
+				A10FBFA123C08978008B68DD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -276,6 +277,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A10FBFA123C08978008B68DD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A10ECB6B2376530E00F68D66 /* Sources */ = {

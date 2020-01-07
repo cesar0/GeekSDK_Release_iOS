@@ -14,6 +14,7 @@ public class GeekSDK_DeviceInfoModel: NSObject {
     public var deviceInfoVersion : String?      //设备版本号
     public var deviceInfoMode : String?         //设备mode（设备的唯一标识）
     public var deviceInfoType: Int?             //设备类型 0:键鼠类型 1：单边手柄 2: 双边手柄 3: 两点手柄 7： 游戏手机壳 16: 主机设备
+    public var deviceSupportModelList: Array?   //设备所支持的模式列表
     public var deviceInfoModel : Int?           //设备模式 0:安卓模式 1:直玩模式 2: 有线模式（直玩模式跟有线模式都属于iOS模式）
     public var deviceConfigMaxLength: String?   //设备最大允许添加的配置按键的长度
 }
@@ -107,7 +108,7 @@ public class func getDeviceOTAUpdateType(updateOTAType: @escaping (_ updateType:
 public class func new_updateDeviceMCUWithDeviceInfoMode(deviceInfoMode: String, progress: @escaping (_ processFloat: Float) -> Void, updateFailed: @escaping () -> Void, updateOTAComplated: @escaping () -> Void) -> Void
 
 //蓝牙ota升级方法
-public class func updateDeviceOTAWithDeviceInfoMode(deviceInfoMode: String, progress: @escaping (_ processFloat: Float) -> Void, updateFailed: @escaping () -> Void, updateOTAComplated: @escaping () -> Void) -> Void
+public class func updateDeviceOTAWithDeviceInfoMode(deviceInfoMode: String, progress: @escaping (_ processFloat: Float) -> Void, updateFailed: @escaping (String) -> Void, updateOTAComplated: @escaping () -> Void) -> Void
     
 //老设备mcu升级方法
 public class func old_updateDeviceMCUWithDeviceInfoMode(deviceInfoMode: String, progress: @escaping (_ processFloat: Float) -> Void, updateFailed: @escaping () -> Void, updateOTAComplated: @escaping () -> Void) -> Void

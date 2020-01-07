@@ -47,12 +47,16 @@ class ViewController: UIViewController {
 //        }) {
 //            print("升级成功")
 //        }
-        GeekSDK.updateDeviceOTAWithDeviceInfoMode(deviceInfoMode: "ZW-ZG5P", progress: { (progressFloat) in
-            print(progressFloat)
-        }, updateFailed: {
-            print("更新失败")
-        }) {
-            print("更新成功")
+//        GeekSDK.updateDeviceOTAWithDeviceInfoMode(deviceInfoMode: "ZW-ZG5P", progress: { (progressFloat) in
+//            print(progressFloat)
+//        }, updateFailed: {
+//            print("更新失败")
+//        }) {
+//            print("更新成功")
+//        }
+        let data: NSArray = [["key_R":0, "key_Name":"2C", "key_X":526, "key_M":0, "key_D":0, "key_Y":182, "key_P":0]]
+        GeekSDK.writeDataToDevice(keyInfoList: data) {
+            print("writeSuccess")
         }
     }
     
